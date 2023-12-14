@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Juego Ahorcado</h1>
+    </header>
+    <section>
+        <div id="palabraDiv">
+            <p id="palabra"></p>
+        </div>
+        <div id="imagen">
+            <img src="./img/hangman/Hangman-0.png" alt="ahorcado" id="ahorcado">
+        </div>
+        <div>
+            <p id="errores"></p>
+        </div>
+        <div id="letras">
+            <button id="a" onclick="letraIngresada('a')">a</button>
+            <button id="b" onclick="letraIngresada('b')">b</button>
+            <button id="c" onclick="letraIngresada('c')">c</button>
+            <button id="d" onclick="letraIngresada('d')">d</button>
+            <button id="e" onclick="letraIngresada('e')">e</button>
+            <button id="f" onclick="letraIngresada('f')">f</button>
+            <button id="g" onclick="letraIngresada('g')">g</button>
+            <button id="h" onclick="letraIngresada('h')">h</button>
+            <button id="i" onclick="letraIngresada('i')">i</button>
+            <button id="j" onclick="letraIngresada('j')">j</button>
+            <button id="k" onclick="letraIngresada('k')">k</button>
+            <button id="l" onclick="letraIngresada('l')">l</button>
+            <button id="m" onclick="letraIngresada('m')">m</button>
+            <button id="n" onclick="letraIngresada('n')">n</button>
+            <button id="ñ" onclick="letraIngresada('ñ')">ñ</button>
+            <button id="o" onclick="letraIngresada('o')">o</button>
+            <button id="p" onclick="letraIngresada('p')">p</button>
+            <button id="q" onclick="letraIngresada('q')">q</button>
+            <button id="r" onclick="letraIngresada('r')">r</button>
+            <button id="s" onclick="letraIngresada('s')">s</button>
+            <button id="t" onclick="letraIngresada('t')">t</button>
+            <button id="u" onclick="letraIngresada('u')">u</button>
+            <button id="v" onclick="letraIngresada('v')">v</button>
+            <button id="w" onclick="letraIngresada('w')">w</button>
+            <button id="x" onclick="letraIngresada('x')">x</button>
+            <button id="y" onclick="letraIngresada('y')">y</button>
+            <button id="z" onclick="letraIngresada('z')">z</button>
+        </div>
+        <div id="mensaje">
+            <p id="tamanioPalabra"></p>
+        </div>
+        <div id="boton">
+            <button onclick="location.reload()">Reiniciar</button>
+        </div>
+    </section>
+    <footer>
+        <a href="https://github.com/Franspi-lol" target="_blank" rel="noopener">
+            <img src="./img/25231.png" alt="github">
+        </a>
+    </footer>
+</body>
+</html>

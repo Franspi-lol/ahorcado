@@ -1,0 +1,40 @@
+#letras button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 2px;
+}
+#letras {
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+#mensaje {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    height: 5vh;
+    width: 100%;
+    background-color: #979797;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
