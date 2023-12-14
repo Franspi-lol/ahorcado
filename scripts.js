@@ -57,6 +57,7 @@ function mostrarLetra(letra) {
       tamanioPalabra.innerHTML = palabraOculta.join(" ");
     }
   }
+  
     if (!palabraOculta.includes("_")) {
         alert("Ganaste");
         window.location.reload();
@@ -69,6 +70,7 @@ function mostrarError(letra) {
     console.log(errores.innerHTML.length);
     errores.innerHTML += letra;
     ahorcadoImg.src = `./img/hangman/Hangman-${errores.innerHTML.length}.png`;
+
     if (errores.innerHTML.length === 7) {
         alert("Perdiste");
         window.location.reload();
