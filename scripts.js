@@ -25,6 +25,11 @@ let arrayPalabras = [
   "xilofono",
   "yoyo",
   "zorro",
+  "arbol",
+  "barco",
+  "carro",
+  "delfin",
+  "nepal",
 ];
 
 let palabra = arrayPalabras[Math.floor(Math.random() * arrayPalabras.length)];
@@ -32,7 +37,6 @@ let palabraCompleta = palabra.split("");
 let palabraOculta = new Array(palabraCompleta.length).fill("_");
 
 document.addEventListener("DOMContentLoaded", function () {
-  
   let palabraP = document.getElementById("palabra");
   let tamanioPalabra = document.getElementById("tamanioPalabra");
   /* palabraP.innerHTML = palabra; */
@@ -57,24 +61,22 @@ function mostrarLetra(letra) {
       tamanioPalabra.innerHTML = palabraOculta.join(" ");
     }
   }
-  
-    if (!palabraOculta.includes("_")) {
-        alert("Ganaste");
-        window.location.reload();
-    }
+
+  if (!palabraOculta.includes("_")) {
+    alert("Ganaste" + " " + "La palabra era: " + palabra);
+    window.location.reload();
+  }
 }
 
 function mostrarError(letra) {
-    let errores = document.getElementById("errores");
-    let ahorcadoImg = document.getElementById("ahorcado");
-    console.log(errores.innerHTML.length);
-    errores.innerHTML += letra;
-    ahorcadoImg.src = `./img/hangman/Hangman-${errores.innerHTML.length}.png`;
+  let errores = document.getElementById("errores");
+  let ahorcadoImg = document.getElementById("ahorcado");
+  console.log(errores.innerHTML.length);
+  errores.innerHTML += letra;
+  ahorcadoImg.src = `./img/hangman/Hangman-${errores.innerHTML.length}.png`;
 
-    if (errores.innerHTML.length === 7) {
-        alert("Perdiste");
-        window.location.reload();
-    }
+  if (errores.innerHTML.length === 7) {
+    alert("Perdiste" + " " + "La palabra era: " + palabra);
+    window.location.reload();
+  }
 }
-
-
